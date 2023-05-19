@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.contact {
+  display: relative;
+}
+
+.grid-item {
+  position: relative;
+  padding: 0;
+}
+
+.grid-item img {
+  pointer-events: none;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.grid-item a img[src^="../images/iris"] {
+  pointer-events: auto;
+  z-index: 1;
+  position: absolute;
+}
+
+.grid-item a img[src^="../images/email"],
+.grid-item a img[src^="../images/name"],
+.grid-item a img[src^="../images/downloaded"],
+.grid-item a img[src^="../images/exit"] {
+  pointer-events: auto;
+  z-index: 0;
+  position: absolute;
+}
