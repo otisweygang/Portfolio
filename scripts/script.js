@@ -42,7 +42,7 @@ iris8.addEventListener("click", () => {
       iris8.src = "../images/downloaded.svg";
       // Download the CV file
       const downloadLink = document.createElement("a");
-      downloadLink.href = "../cv.pdf";
+      downloadLink.href = "../images/cv.pdf";
       downloadLink.download = "cv.pdf";
       downloadLink.click();
     } else {
