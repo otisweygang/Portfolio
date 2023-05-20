@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 
 .grid-container {
@@ -19,6 +20,8 @@ body {
 .grid-item {
   position: relative;
   padding: 0;
+  overflow: hidden; 
+  height: 33.33vh; 
 }
 
 .grid-item img {
