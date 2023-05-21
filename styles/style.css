@@ -54,6 +54,7 @@ body {
 
   .grid-item {
     height: 25vh; /* Adjust the height to fit 4 rows */
+    width: 50vw;
   }
 }
 
