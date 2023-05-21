@@ -46,7 +46,7 @@ body {
   z-index: 0;
   position: absolute;
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 */
     grid-template-rows: repeat(4, 1fr); /* 4 rows instead of 1 */
@@ -54,10 +54,8 @@ body {
 
   .grid-item {
     height: 25vh; /* Adjust the height to fit 4 rows */
-
   }
 }
-
 
 
 
